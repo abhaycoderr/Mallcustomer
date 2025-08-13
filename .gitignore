@@ -1,0 +1,16 @@
+# Ignore the virtual environment folder
+venv/
+
+# Ignore Python bytecode and cache files
+__pycache__/
+*.pyc
+
+# Ignore editor-specific files
+.vscode/
+
+# Ignore macOS-specific files
+.DS_Store
+
+# Ignore temporary and output files
+# You may want to commit your plots, but this is an example of what to ignore
+*.png
