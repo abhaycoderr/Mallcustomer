@@ -1,91 +1,93 @@
-# House Price Prediction using Machine Learning
+# Mall Customer Segmentation using Machine Learning
 
 ## Overview
-This project implements a House Price Prediction System using machine learning techniques to estimate property prices based on features such as area, number of rooms, location, and amenities.
+This project focuses on customer segmentation using machine learning techniques to group mall customers based on their demographic and behavioral characteristics.
 
-The project demonstrates an end-to-end machine learning workflow, including data preprocessing, feature engineering, model training, evaluation, and prediction.
+Customer segmentation is an important task in retail analytics, enabling businesses to understand customer behavior and design targeted marketing strategies. This project demonstrates an end-to-end workflow including data preprocessing, clustering, and visualization.
 
 ---
 
 ## Problem Statement
-Accurately predicting house prices is a key challenge in the real estate domain. The goal is to build a regression model that can estimate property prices based on multiple input features and provide reliable predictions.
-
----
-
-## Objectives
-- Develop a regression-based machine learning model  
-- Perform data preprocessing and feature engineering  
-- Analyze relationships between features and target variable  
-- Evaluate model performance using standard metrics  
+Given a dataset of mall customers, the objective is to segment customers into distinct groups based on their spending behavior and income patterns. These segments can help businesses identify high-value customers and optimize marketing strategies.
 
 ---
 
 ## Dataset Description
-The dataset contains structured information about houses and their corresponding prices.
 
-### Features:
-- Area (square feet)  
-- Number of bedrooms  
-- Number of bathrooms  
-- Location / neighborhood  
-- Age of property  
-- Additional amenities (if available)  
-
-### Target Variable:
-- House Price  
+The project uses the **Mall Customers Dataset**, which is commonly used for learning clustering techniques.
 
 ### Dataset Characteristics:
-- Structured tabular dataset  
-- Mix of numerical and categorical features  
-- Requires preprocessing such as encoding and scaling  
+- Total Records: ~200 customers  
+- Total Features: 5  
+- No missing values  
+
+### Features:
+- **CustomerID** – Unique identifier for each customer  
+- **Gender** – Male / Female  
+- **Age** – Age of the customer  
+- **Annual Income (k$)** – Yearly income in thousand dollars  
+- **Spending Score (1–100)** – Score assigned based on purchasing behavior  
+
+This dataset contains both demographic and behavioral data, making it suitable for clustering and segmentation tasks. :contentReference[oaicite:0]{index=0}  
 
 ---
 
 ## Methodology
 
 ### Data Preprocessing
-- Handling missing values  
-- Encoding categorical variables  
-- Feature scaling (normalization/standardization)  
+- Checked for missing values  
+- Selected relevant features (Income & Spending Score)  
+- Feature scaling for clustering  
 
 ### Exploratory Data Analysis
-- Distribution analysis of features  
-- Correlation analysis  
-- Identification of outliers  
+- Distribution of age, income, and spending score  
+- Relationship between income and spending  
 
-### Model Development
-- Regression model (Linear Regression / specify your model)  
-- Train-test split for evaluation  
+### Model Implementation
+- Applied **K-Means Clustering algorithm**  
+- Used **Elbow Method** to determine optimal number of clusters  
 
-### Evaluation Metrics
-- Mean Squared Error (MSE)  
-- Root Mean Squared Error (RMSE)  
-- R² Score  
+K-Means groups similar data points by minimizing the distance between data points and cluster centroids. :contentReference[oaicite:1]{index=1}  
 
 ---
 
-## Model Performance
+## Results and Insights
 
-- R² Score: 0.68  
-- Mean Squared Error (MSE): Moderate  
-- Root Mean Squared Error (RMSE): Moderate  
+The model identifies **approximately 5 customer segments**, such as:
 
-### Performance Analysis
-The model achieves reasonable performance but is limited by:
-- Dataset size  
-- Linear assumptions of the model  
-- Limited feature engineering  
+- High income, high spending (premium customers)  
+- High income, low spending  
+- Low income, high spending  
+- Average income and spending  
+- Low income, low spending  
 
-The results are realistic and highlight areas for improvement rather than overfitting.
+These clusters help businesses:
+- Identify target customers  
+- Improve marketing strategies  
+- Increase customer retention  
+
+Clustering enables discovery of hidden patterns in data without labeled outputs, making it a powerful unsupervised learning technique. :contentReference[oaicite:2]{index=2}  
+
+---
+
+## Performance Evaluation
+
+Since this is an **unsupervised learning problem**, traditional accuracy metrics are not used.
+
+Evaluation is based on:
+- Cluster separation (visual clarity)  
+- Elbow method optimization  
+- Business interpretability of clusters  
 
 ---
 
 ## Tech Stack
 - Python  
-- Scikit-learn  
 - Pandas  
 - NumPy  
-- Matplotlib / Seaborn  
+- Matplotlib  
+- Seaborn  
+- Scikit-learn  
 
 ---
 
