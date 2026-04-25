@@ -17,8 +17,7 @@ Given a dataset of mall customers, the objective is to segment customers into di
 The project uses the **Mall Customers Dataset**, which is commonly used for learning clustering techniques.
 
 ### Dataset Characteristics:
-- Total Records: ~200 customers  
-- Total Features: 5  
+ - Total Features: 5  
 - No missing values  
 
 ### Features:
@@ -28,7 +27,7 @@ The project uses the **Mall Customers Dataset**, which is commonly used for lear
 - **Annual Income (k$)** – Yearly income in thousand dollars  
 - **Spending Score (1–100)** – Score assigned based on purchasing behavior  
 
-This dataset contains both demographic and behavioral data, making it suitable for clustering and segmentation tasks. :contentReference[oaicite:0]{index=0}  
+This dataset contains both demographic and behavioral data, making it suitable for clustering and segmentation tasks.
 
 ---
 
