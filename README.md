@@ -46,8 +46,7 @@ This dataset contains both demographic and behavioral data, making it suitable f
 - Applied **K-Means Clustering algorithm**  
 - Used **Elbow Method** to determine optimal number of clusters  
 
-K-Means groups similar data points by minimizing the distance between data points and cluster centroids. :contentReference[oaicite:1]{index=1}  
-
+K-Means groups similar data points by minimizing the distance between data points and cluster centroids. 
 ---
 
 ## Results and Insights
@@ -65,8 +64,7 @@ These clusters help businesses:
 - Improve marketing strategies  
 - Increase customer retention  
 
-Clustering enables discovery of hidden patterns in data without labeled outputs, making it a powerful unsupervised learning technique. :contentReference[oaicite:2]{index=2}  
-
+Clustering enables discovery of hidden patterns in data without labeled outputs, making it a powerful unsupervised learning technique. 
 ---
 
 ## Performance Evaluation
